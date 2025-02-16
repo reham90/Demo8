@@ -877,7 +877,7 @@ border-radius: 20px;
        position: absolute;
 	}
 .lang a{
-	font-size: 15px;
+	font-size: 15px !important;
 }
 
 
