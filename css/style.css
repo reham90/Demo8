@@ -873,10 +873,12 @@ border-radius: 20px;
 
 
 	.img-logo {
-		width: 50px;
+		width: 40px;
        position: absolute;
 	}
-
+.lang a{
+	font-size: 15px;
+}
 
 
 	.header-icons-section{
