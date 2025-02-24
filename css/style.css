@@ -1,12 +1,9 @@
 body {
 	font-family: "IBMPlexSansArabic-Regular", sans-serif;
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+	
 	overflow-x: hidden;
 	padding-top: 128px;
-	height: max-content;
-	max-height: max-content;
+	
   }
   
   .overflow {
@@ -268,10 +265,10 @@ body {
   .fixed-header .search-content {
 	top: 65px;
   }
-  .h-0 {
+  .height-when-close {
 	height: 0;
   }
-  .h-70 {
+  .height-when-open {
 	height: 65px;
 	padding: 5px 0 0;
 	visibility: visible;
@@ -370,7 +367,7 @@ body {
 	  margin-top: 7px;
 	}
   
-	.h-70 {
+	.height-when-open {
 	  height: 57px;
 	}
   
@@ -465,7 +462,7 @@ body {
 	outline: none;
 	transition: all 0.3s ease-in-out;
   }
-  .h-70 .search-input {
+  .height-when-open .search-input {
 	height: 40px;
   }
   
@@ -573,7 +570,7 @@ body {
 	width: 100%;
 	overflow: hidden;
 	transition: 0.5s;
-	position: relative;
+	
 	height: 100%;
   }
   .banner-block:hover .banner-img {
@@ -605,14 +602,14 @@ body {
   .best-seller-block {
 	display: flex;
 	flex-direction: column;
-	position: relative;
+	
   }
   
   .best-seller-figure {
 	overflow: hidden;
 	transition: 0.5s;
 	margin-bottom: 15px;
-	position: relative;
+	
   }
   .cat-fav-btns {
 	display: flex;
@@ -746,20 +743,15 @@ body {
   }
   .new-price {
 	color: var(--main-color);
-	display: block;
-	margin: 0;
-	padding: 0;
-	text-align: center;
+	
 	font-size: 18px;
 	font-family: "IBMPlexSansArabic-Bold";
 	text-transform: uppercase;
   }
   .old-price {
 	color: #888;
-	display: block;
-	margin: 0;
-	padding: 0;
-	text-align: center;
+	
+	
 	font-size: 16px;
 	text-decoration: line-through;
 	text-transform: uppercase;
@@ -887,23 +879,42 @@ body {
 	gap: 5px;
   }
   .social-icon {
-	color: rgb(128, 128, 128);
-	transition: 0.5s;
+	width: 43px;
+	height: 43px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	color: #fff;
 	font-size: 18px;
-	opacity: 1;
+	
+  }
+  .social-icon:hover{
+	color: #fff;
+  }
+  .fb{
+	background-color: #4e71a8;
+  }
+  .twitter{
+	background-color: #494949;
+  }
+  .insta{
+	background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+
+  }
+  .snap{
+	background-color: #f4c817;
+  }
+  .whats-app{
+	background-color: #00b934;
   }
   .mb-24 {
 	margin-bottom: 24px !important;
   }
-  .social-icon img {
-	border-radius: 50%;
-	width: 44px;
-	height: 43px;
-  }
+
   
-  .social-icon:hover {
-	color: rgb(91, 146, 33);
-  }
+  
   .nav-foot-header {
 	color: var(--main-color);
 	text-transform: uppercase;
@@ -1028,7 +1039,7 @@ body {
 	display: block;
   }
   .newsletter-input-div {
-	width: 812px;
+	width: 65%;
 	height: 55px;
 	position: relative;
   }
@@ -1331,10 +1342,9 @@ body {
 	  font-size: 13px;
 	}
 	.newsletter-input-div {
-	  gap: 10px;
+	  
 	  width: 100%;
-	  flex-wrap: wrap;
-	  justify-content: center;
+	 
 	}
 	.newsletter {
 	  gap: 10px;
@@ -1484,21 +1494,19 @@ body {
 	background-color: var(--main-color);
 	color: #fff;
   }
-  
-  @media (min-width: 1140px) {
+  @media only screen and (min-width: 1140px)  {
 	.container {
 	  width: 1410px;
 	}
   }
-  @media (max-width: 767px) {
-	.container,
-	.container-fluid,
-	.container-lg,
-	.container-md,
-	.container-sm,
-	.container-xl {
-	  padding-left: 20px;
-	  padding-right: 20px;
+  @media only screen and (max-width: 1200px) and (min-width: 992px) {
+	.container {
+		width: 970px !important;
+	  }
+  }
+  @media only screen and (max-width: 991px) and (min-width: 768px) {
+	.features-section{
+		display: grid;
+        grid-template-columns: repeat(2, 1fr);
 	}
   }
-  
