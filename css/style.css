@@ -1026,19 +1026,12 @@ body {
 
   }
   @media (min-width: 991px) {
-	.nav-wrap {
-	  display: flex;
-	  flex-direction: column;
-	  max-height: 200px;
-	  flex-wrap: wrap;
-	}
+
 	
 	.footer-note{
 		margin-bottom: 20px;
 	}
-	.nav-foot{
-		flex-direction: column !important;
-	}
+
   }
   .footer-accordion.nav-foot-header {
 	margin-bottom: 0;

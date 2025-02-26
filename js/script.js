@@ -127,7 +127,7 @@ var lastScroll = 0;
 
     ////////////** footer transfer into accordion **//////////
 
-   
+    if ($(window).width() <= 991) {
     $(".footer-accordion").click(function () {
       var x = $(this).siblings().prop("scrollHeight") + 15 + "px";
       $(".footer-accordion").not(this).removeClass("active");
@@ -142,5 +142,5 @@ var lastScroll = 0;
   
     
     });
-
+    };
 });
