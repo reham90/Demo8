@@ -127,7 +127,7 @@ var lastScroll = 0;
 
     ////////////** footer transfer into accordion **//////////
 
-    if ($(window).width() <= 990) {
+    if ($(window).width() <= 991) {
         $(".nav-foot-header").addClass("footer-accordion");
         $(".nav-foot").addClass("footer-panel");
       }
@@ -143,11 +143,7 @@ var lastScroll = 0;
         $(this).siblings(".nav-foot").css("padding-top", "0");
       }
   
-      $(".footer-accordion").not(this).siblings().css("max-height", "0");
-      $(".footer-accordion")
-        .not(this)
-        .siblings(".nav-foot")
-        .css("padding-top", "0");
+    
     });
 
 });
